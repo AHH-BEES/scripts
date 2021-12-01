@@ -20,6 +20,7 @@ if ($OUPart -ne '') {$arrayOU += "ou="+$OUPart}
 $OUarrayMinusq = $arrayOU | select -skipLast 1
 $OU = $OUarrayMinusq -join ","
 
+clear-host
 
 do {
 write-Host "Enter DC container (do not type DC=)[type 'q' to stop]:" -noNewLine -backgroundcolor cyan -foregroundcolor darkMagenta
